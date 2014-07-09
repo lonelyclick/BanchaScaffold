@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Bancha Scaffold - Easy Ext JS 4 Prototyping</title>
-    <link rel="stylesheet" href="http://cdn.sencha.io/ext-4.2.0-gpl/resources/css/ext-all.css" type="text/css"/>
+    <link rel="stylesheet" href="../ext/resources/ext-theme-classic/ext-theme-classic-all.css" type="text/css"/>
     <style type="text/css">
 /* basic layout */
 		*{margin:0;padding:0;}
@@ -77,27 +77,11 @@
     </style>
 </head>
 <body>
-
-    <a href="https://github.com/Bancha/BanchaScaffold"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork it on GitHub"></a>
-
-
     <div id="container">
         <div id="centered_container">
-            <div id="header"><a href="http://scaffold.bancha.io"><img width="760" height="178" src="http://files.banchaproject.org/tl_files/Bancha/images/bancha-scaffold/bancha-scaffold-claim.jpg" border="0" style="padding:0; margin:0;"></a></div>
             <div id="content">
 
                 <h1>Bancha Scaffold Examples</h1>
-
-                <p style="text-align:center;">
-                    Check out <a href="https://raw.github.com/Bancha/BanchaScaffold/master/samples/js/models.js" target="_blank">
-                    the model's configuration </a> and <a href="https://raw.github.com/Bancha/BanchaScaffold/master/samples/js/samples.js" target="_blank">
-                    the scaffolding code</a>.
-                </p>
-                <p style="text-align:center;"><i>
-                    Please note, the server will always accept the save request, but will not persist the changes, <br />
-                    since this a javascript library for any generic backend.
-                </i></p>
-
                 <div id="gridpanel"></div>
 
                 <div id="paginated-gridpanel"></div>
@@ -116,7 +100,7 @@
 
 <!-- include Ext JS -->
 <!--IFDEBUG -->
-<script type="text/javascript" charset="utf-8" src="http://cdn.sencha.io/ext-4.2.0-gpl/ext-all-debug.js"></script>
+<script type="text/javascript" charset="utf-8" src="../ext/ext-all-debug.js"></script>
 <!-- ENDIF -->
 <!-- IFPRODUCTION
 <script type="text/javascript" charset="utf-8" src="http://cdn.sencha.io/ext-4.2.0-gpl/ext-all.js"></script>
@@ -150,19 +134,6 @@ ENDIF -->
 <script type="text/javascript" src="js/samples.js"></script>
 
 
-<!-- Add a feedback widget -->
-<script type="text/javascript">
-  var uvOptions = {};
-  (function() {
-    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/0UXfPisT7dSYfaE0il292w.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-  })();
-</script>
-
-<!-- add anonyminized google analytics -->
-<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-10118336-4']);_gaq.push(['_setDomainName', 'scaffold.banchaproject.org']);_gaq.push(['_gat._anonymizeIp']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
-</script>
 
 </body>
 </html>

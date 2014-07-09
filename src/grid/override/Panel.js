@@ -233,7 +233,7 @@ Ext.define('Bancha.scaffold.grid.override.Panel', {
 
                 // infer name
                 if (field.name) {
-                    column.text = Bancha.scaffold.Util.humanize(field.name);
+                    column.text = field.text || Bancha.scaffold.Util.humanize(field.name);
                     column.dataIndex = field.name;
                 }
 

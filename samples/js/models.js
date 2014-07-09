@@ -113,29 +113,37 @@ Ext.define('Bancha.model.User', {
     fields: [
         {
             name: 'id',
-            type: 'int'
+            type: 'int',
+            text: 'ID'
         }, {
             name: 'name',
-            type: 'string'
+            type: 'string',
+            text: '名称'
         }, {
             name: 'login',
-            type: 'string'
+            type: 'string',
+            text: '登录状态'
         }, {
             name: 'created',
             type: 'date',
-            dateFormat: 'Y-m-d H:i:s'
+            dateFormat: 'Y-m-d H:i:s',
+            text: '创建时间'
         }, {
             name: 'email',
-            type: 'string'
+            type: 'string',
+            text: '电子邮箱'
         }, {
             name: 'avatar',
-            type: 'string'
+            type: 'string',
+            text: 'AVATAR'
         }, {
             name: 'weight',
-            type: 'float'
+            type: 'float',
+            text: '体重'
         }, {
             name: 'height',
-            type: 'int'
+            type: 'int',
+            text: '身高'
         }
     ],
     validations: [

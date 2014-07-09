@@ -471,7 +471,7 @@ Ext.define('Bancha.scaffold.form.override.Panel', {
                 // infer name
                 field.name = modelField.name;
                 if (!isEditorfield) {
-                    field.fieldLabel = Util.humanize(modelField.name);
+                    field.fieldLabel = modelField.text || Util.humanize(modelField.name);
                 }
 
                 // infer date format into editor (not needed for editor fields)
